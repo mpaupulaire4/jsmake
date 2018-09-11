@@ -1,0 +1,7 @@
+{
+  "name": "jsmake",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Michel Paupulaire <mike.p248@gmail.com>",
+  "license": "MIT"
+}
