@@ -5,6 +5,10 @@
   "author": "Michel Paupulaire <mike.p248@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "commander": "^2.18.0"
+    "commander": "^2.18.0",
+    "lodash": "^4.17.10",
+    "promptly": "^3.0.3",
+    "shelljs": "^0.8.2",
+    "voca": "^1.4.0"
   }
 }
