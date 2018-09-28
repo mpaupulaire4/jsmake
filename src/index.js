@@ -1,14 +1,10 @@
 const path = require('path')
 const fs = require('fs')
+const Helpers = require('./Helpers')
 
 module.exports = (script, args) => {
   if (typeof script === 'function') {
-    make = script({
-      args,
-      _: require('lodash'),
-      v: require('voca'),
-      prompt: require('promptly'),
-    })
+    make = script(new Helpers(args))
   } else if (typeof script === 'object' ) {
     make = script
   } else {
@@ -16,4 +12,8 @@ module.exports = (script, args) => {
     process.emit(1)
   }
   console.log('make', make)
+}
+
+function execTemplates(templates = []) {j
+
 }

@@ -18,17 +18,5 @@ program
   })
   .parse(process.argv);
 
-function wrapArgs(args) {
-  return {
-    get: (i) => {
-      if (args[i]){
-        return args[i]
-      } else {
-        console.log
-      }
-    }
-  }
-}
-
 program.outputHelp()
 process.exit(1)
